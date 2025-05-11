@@ -9,7 +9,7 @@ interface EditTaskModalProps {
   setNewTitle: (val: string) => void;
 }
 
-export const EditTasks: React.FC<EditTaskModalProps> = ({ isVisible, setNewTitle, onSave, onCancel }) => {
+export const EditTask: React.FC<EditTaskModalProps> = ({ isVisible, setNewTitle, onSave, onCancel }) => {
 
   if (!isVisible) return null;
 

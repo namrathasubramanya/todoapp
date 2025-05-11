@@ -2,7 +2,7 @@
 import * as React from "react";
 import { Task, TaskCard } from "./TaskCard";
 import DeleteTaskModal from './taskActions/DeleteTasks';
-import { EditTasks } from "./taskActions/EditTasks";
+import { EditTask } from "./taskActions/EditTasks";
 
 // TaskList functional component
 export const TaskList = () => {
@@ -32,7 +32,7 @@ export const TaskList = () => {
                 />
               }
               {openEditModal &&
-                <EditTasks
+                <EditTask
                   isVisible={openEditModal}
                   taskTitle={task?.title}
                   onSave={() => ediTask(task?.id, newTitle)}
